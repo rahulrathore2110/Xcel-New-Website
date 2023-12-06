@@ -17,6 +17,7 @@ html {
   --third-color: #d83131;
   --forth-color: #fbd71e;
   --white: #ffffff;
+  --dark:#1c2045;
 }
 
 * {
@@ -53,7 +54,7 @@ button {
 }
 
 button:hover {
-  background-color: var(--forth-color);
+  background-color: var(--dark);
 }
 
 hr {
@@ -74,15 +75,22 @@ header {
   flex-direction: column;
   width: 100vw;
 }
-
+nav{
+  width: 100%;
+}
 .navbar {
   display: flex;
-  padding: 0px 20px;
+  padding: 10px 20px;
   justify-content: space-between;
   align-items: center;
-  max-width: 1300px;
+  position: fixed;
   margin: auto;
-  width: 100vw;
+  z-index: 1000;
+}
+
+nav.black{
+  background-color: var(--dark);
+  padding: 5px 20px;
 }
 
 .navbar img {
@@ -190,7 +198,7 @@ header {
   max-width: 850px;
   margin: auto;
   margin-bottom: 10px;
-  color: var(--primary-heading);
+  color: var(--dark);
   letter-spacing: 1px;
 }
 
@@ -207,7 +215,7 @@ header {
   background-color: var(--secondry-color);
 }
 
-.special_cont{
+.special_cont {
   max-width: 1200px;
   margin: auto;
 }
@@ -216,7 +224,7 @@ header {
   font-size: 50px;
   font-weight: 600;
   margin-bottom: 10px;
-  color: var(--primary-heading);
+  color: var(--dark);
   letter-spacing: 1px;
   text-align: center;
 }
@@ -245,7 +253,7 @@ header {
   font-size: 22px;
   font-weight: 600;
   text-align: center;
-  color: var(--primary-heading);
+  color: var(--dark);
   letter-spacing: 1px;
 }
 
@@ -266,7 +274,7 @@ header {
   font-size: 50px;
   font-weight: 600;
   margin-bottom: 50px;
-  color: var(--primary-heading);
+  color: var(--dark);
   letter-spacing: 1px;
   text-align: center;
 }
@@ -279,45 +287,47 @@ header {
   margin: auto;
 }
 
-.service_cont{
+.service_cont {
   display: grid;
-  grid-template-columns: repeat(3,1fr);
+  grid-template-columns: repeat(3, 1fr);
   padding: 100px 0px;
   gap: 40px;
   max-width: 1200px;
   margin: auto;
 }
 
-.service_cont img{
+.service_cont img {
   width: 50%;
 }
 
-.service_cont > div{
+.service_cont > div {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 20px;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px; 
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
 
-  border-radius: 60px 0px ;
+  border-radius: 60px 0px;
 }
 
-.service_cont > div:hover{
-  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+.service_cont > div:hover {
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+    rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
   transition: var(--tarns1);
 }
 
-.service_cont > div>p:nth-child(2){
+.service_cont > div > p:nth-child(2) {
   font-size: 20px;
   font-weight: 600;
   margin: 20px;
-  color: var(--primary-heading);
+  color: var(--dark);
   letter-spacing: 1px;
   text-align: center;
 }
 
-.service_cont > div>p:nth-child(3){
+.service_cont > div > p:nth-child(3) {
   font-size: 16px;
   font-weight: 400;
   color: var(--secondry-heading);
@@ -325,13 +335,12 @@ header {
   max-width: 320px;
 }
 
-.service_cont button{
+.service_cont button {
   background-color: var(--third-color);
   margin-bottom: 20px;
-} 
-
-.service_cont button:hover{
-  background-color: var(--secondry-color);
-  color: var(--primary-heading);
 }
 
+.service_cont button:hover {
+  background-color: var(--dark);
+  color: var(--white);
+}
