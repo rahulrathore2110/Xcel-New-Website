@@ -38,72 +38,58 @@ li {
 img {
   width: 100%;
 }
+
+/* ############################ Navbar ######################## */
+
 header {
-  padding-top: 5px;
-  position: relative;
-  z-index: 1000;
   position: fixed;
-  margin: auto;
   width: 100%;
+  top: 0;
+  z-index: 999;
+    padding-top: 10px;
 }
 
-header a {
-  color: #eee;
-  margin-right: 40px;
+header img {
+  width: 130px;
 }
-
-.navbar {
-  display: flex;
-  padding: 0px 20px;
-  justify-content: space-between;
-  align-items: center;
-  z-index: 1000;
-  max-width: 1280px;
-  margin: auto;
-}
-
-nav {
-  display: flex;
-  justify-content: space-between;
-}
-
 header.black {
   background-color: var(--dark);
 }
 
-.navbar img {
-  width: 120px;
+.hamburger {
+  display: none;
+  /* z-index: 1000; */
 }
 
-.navbar .sub_menu {
-  display: none;
-}
-.open {
-  display: none;
+#close {
+  visibility: hidden;
+  z-index: 999;
 }
 
-.close {
-  display: none;
-}
-
-.navbar ul {
+#navbar {
   display: flex;
-  gap: 40px;
-  font-weight: 500;
-  color: var(--white);
-  font-size: 18px;
+  max-width: 1200px;
+  margin: auto;
+  justify-content: space-between;
+  color: var(--white)
+}
+
+.nav-items ul{
+  display: flex;
+  gap:40px;
+  
 }
 
 /* carousel */
 .carousel {
   height: 100vh;
-  width: 100vw;
+  /* width: 100vw; */
   overflow: hidden;
   position: relative;
 }
 .carousel .list .item {
   width: 100%;
-  height: 100%;
+  /* height: 100%; */
   position: absolute;
   inset: 0 0 0 0;
 }
@@ -437,24 +423,24 @@ header.black {
 .special > div {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 50px;
+  gap: 0px;
 }
 
 .special > div > div {
-  border-radius: 20px;
   padding: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  align-content: flex-start;
 }
 
 .special img {
   width: 50%;
-  margin-bottom: 30px;
+  /* margin-bottom: 30px; */
 }
 
 .special > div > div > p:nth-child(2) {
-  margin: 20px;
+  /* margin: 20px; */
   font-size: 22px;
   font-weight: 600;
   text-align: center;

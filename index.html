@@ -5,33 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./responsive.css" />
+    <script
+      src="https://kit.fontawesome.com/6909acc9e8.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <header>
-      <nav class="navbar">
+      <div id="navbar">
         <div class="logo">
-          <img src="./image/fab logo.png" alt="Fab Logo" />
+          <a href="#"><img src="./image/fab logo.png" alt="logo" /></a>
         </div>
-        <div>
+        <div id="close">
+          <i class="fa-solid fa-xmark"></i>
+        </div>
+        <div class="nav-items">
           <ul>
             <li><a href="#">Home</a></li>
             <li><a href="#">About Us</a></li>
-            <li>
-              <a href="#"
-                >Services
-                <span class="sub_menu">
-                  <ul>
-                    <li>dfsc</li>
-                  </ul>
-                </span>
-              </a>
-            </li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#">Service</a></li>
+            <li><a href="#">Testimonials</a></li>
           </ul>
         </div>
-        <div class="open"><i class="fa-solid fa-bars"></i></div>
-        <div class="close"><i class="fa-solid fa-xmark"></i></div>
-      </nav>
+
+        <div class="hamburger" id="navbars">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </div>
     </header>
 
     <!-- carousel -->
@@ -174,7 +175,7 @@
               positive reputation, brand promotion. We keep up with changing
               marketing trends which will help our clients stand out from the
               crowd.Meet customers quickly and accurately with a data-driven PPC
-              campaign. 
+              campaign.
             </div>
             <div class="buttons">
               <button>READ MORE</button>
@@ -245,8 +246,6 @@
       <div class="time"></div>
     </div>
 
-
-    
     <!-- about us section -->
 
     <section class="aboutus">
@@ -357,7 +356,8 @@
           <img src="./image/9.png" alt="Services" />
           <p>Digital Marketing</p>
           <p>
-            Create an online presence for your brand over various social media platforms and engage & interact directly with your online audience.
+            Create an online presence for your brand over various social media
+            platforms and engage & interact directly with your online audience.
           </p>
           <button>Read More</button>
         </div>
@@ -366,7 +366,9 @@
           <img src="./image/9.png" alt="Services" />
           <p>Website Development</p>
           <p>
-            Develop your online identity with an interactive and visually appealing website to help your customers get directly in touch with you.
+            Develop your online identity with an interactive and visually
+            appealing website to help your customers get directly in touch with
+            you.
           </p>
           <button>Read More</button>
         </div>
@@ -379,11 +381,11 @@
 
 <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
 <script>
-  $(window).scroll(function(){
-      if($(window).scrollTop()){
-        $("header").addClass("black");
-      }else{
-        $("header").removeClass("black")
-      }
-  })
+  $(window).scroll(function () {
+    if ($(window).scrollTop()) {
+      $("header").addClass("black");
+    } else {
+      $("header").removeClass("black");
+    }
+  });
 </script>
