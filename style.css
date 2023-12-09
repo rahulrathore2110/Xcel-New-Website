@@ -376,7 +376,10 @@ header.black {
     padding-right: 0;
   }
   .carousel .list .item .content .title {
-    font-size: 30px;
+    font-size: 25px;
+  }
+  .carousel .list .item .content .topic {
+    font-size: 25px;
   }
 }
 
