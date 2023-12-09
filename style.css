@@ -381,6 +381,10 @@ header.black {
   .carousel .list .item .content .topic {
     font-size: 25px;
   }
+
+  .carousel .list .item .content {
+    top: 15%;
+  }
 }
 
 /* about us section  */
