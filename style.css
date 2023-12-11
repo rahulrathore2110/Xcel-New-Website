@@ -46,7 +46,7 @@ header {
   width: 100%;
   top: 0;
   z-index: 999;
-    padding-top: 10px;
+  padding-top: 10px;
 }
 
 header img {
@@ -54,10 +54,9 @@ header img {
 }
 header.black {
   background-color: var(--white);
-  
 }
 
-header.black a{
+header.black a {
   color: var(--dark);
   font-weight: 500;
   letter-spacing: 1px;
@@ -82,10 +81,9 @@ header.black a{
   padding: 0px 20px;
 }
 
-.nav-items ul{
+.nav-items ul {
   display: flex;
-  gap:40px;
-  
+  gap: 40px;
 }
 
 /* carousel */
@@ -459,10 +457,9 @@ header.black a{
 }
 
 .special > div > div > p:nth-child(3) {
-  text-align: center;
+  text-align: justify;
   max-width: 350px;
   color: var(--white);
-
   font-weight: 400;
 }
 
