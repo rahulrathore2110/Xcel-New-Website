@@ -48,7 +48,7 @@
     </div>
 
     <div class="contact-form">
-      <form action="">
+      <form >
         <h1>Get in Touch with us!</h1>
 
         <input type="text" id="name" placeholder="Enter Your Name*" required />
@@ -88,8 +88,12 @@
           rows="6"
           placeholder="Type Your Message Here"
         ></textarea>
-        <div class="submit-btn">
-          <input type="submit" id="submit" />
+
+        <div>
+          <div class="submit-btn">
+            <input type="submit" id="submit" />
+            <button id="verify">GET OTP</button>
+          </div>
         </div>
       </form>
     </div>
@@ -130,10 +134,16 @@
         </div>
       </div>
     </footer>
+
+    <div class="otp-popup">
+      <input type="number" name="otp" id="optnum" />
+      <button id="otp-verfiy">verify</button>
+    </div>
   </body>
 </html>
 
 <script src="./script/nav.js"></script>
+<script src="./script/submit.js"></script>
 <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
 <script>
   $(window).scroll(function () {
