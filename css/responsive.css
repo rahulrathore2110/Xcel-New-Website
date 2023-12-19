@@ -11,13 +11,13 @@
     color: var(--white);
   }
 
-  header.black .hamburger{
+  header.black .hamburger {
     color: var(--dark);
   }
 
-  header.black a{
-  color: var(--white);
-}
+  header.black a {
+    color: var(--white);
+  }
 
   .nav-items {
     position: absolute;
@@ -31,6 +31,7 @@
     right: 10px;
     border-radius: 20px 0px;
     box-shadow: var(--dark) 0px 5px 15px 5px;
+    padding: 40px 20px;
   }
 
   .fa-xmark {
@@ -41,6 +42,7 @@
   .nav-items ul {
     display: flex;
     flex-direction: column;
+    gap: 30px;
   }
   #navbar {
     padding: 0px 20px;
@@ -64,8 +66,20 @@
     padding: 40px;
   }
 
-    #footer > div {
-     grid-template-columns: repeat(2,1fr);
+  #footer > div {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .contact-cont {
+    height: 70vh;
+  }
+
+  .contact-cont > div > p:nth-child(1) {
+    font-size: 60px;
+  }
+  .contact-cont > div > p:nth-child(2) {
+    font-size: 20px;
+    
   }
 }
 
@@ -118,11 +132,27 @@
   }
 
   #footer > div {
-     grid-template-columns: repeat(1,1fr);
+    grid-template-columns: repeat(1, 1fr);
   }
 
-  #copyright{
-  letter-spacing: 1px;
-  font-size: 12px;
-}
+  #copyright {
+    letter-spacing: 1px;
+    font-size: 12px;
+  }
+
+  .contact-cont {
+    height: 60vh;
+  }
+
+  .contact-cont > div > p:nth-child(1) {
+    font-size: 30px;
+  }
+  .contact-cont > div > p:nth-child(2) {
+    font-size: 17px;
+    
+  }
+  .contact-cont > div > p:nth-child(3),
+  .contact-cont > div > p:nth-child(4) {
+    font-size: 14px;
+  }
 }
