@@ -1,7 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+*{
+scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   font-family: Poppins;
+  
 }
 
 :root {
@@ -54,6 +59,7 @@ header img {
 }
 header.black {
   background-color: var(--white);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 header.black a {
@@ -547,4 +553,39 @@ header.black a {
 .service_cont button:hover {
   background-color: var(--dark);
   color: var(--white);
+}
+
+
+/* footer section  */
+
+#footer {
+  padding: 50px 20px;
+  background-color: var(--primary-heading);
+  color: var(--white);
+}
+
+#footer > div {
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+#footer > div > div>p:nth-child(1){
+  font-size: 20px;
+  letter-spacing: 1px;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+
+#copyright{
+  padding: 10px 20px;
+  background-color: var(--third-color);
+  color: var(--white);
+  display: flex;
+  gap: 20px;
+  letter-spacing: 1px;
 }

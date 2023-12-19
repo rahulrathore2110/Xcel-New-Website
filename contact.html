@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/responsive.css" />
+    <link rel="stylesheet" href="./css/contact.css">
+</head>
+<body>
+     <header>
+      <div id="navbar">
+        <div class="logo">
+          <a href="#"><img src="./image/fab logo.png" alt="logo" /></a>
+        </div>
+        <div id="close">
+          <i class="fa-solid fa-xmark"></i>
+        </div>
+        <div class="nav-items">
+          <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#Service">Service</a></li>
+            <li><a href="#">Carrer</a></li>
+            <li><a href="#footer">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div class="hamburger" id="navbars">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </div>
+    </header>
+</body>
+</html>
+
+<script src="./script/app.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+<script>
+  $(window).scroll(function () {
+    if ($(window).scrollTop()) {
+      $("header").addClass("black");
+    } else {
+      $("header").removeClass("black");
+    }
+  });
+</script>
