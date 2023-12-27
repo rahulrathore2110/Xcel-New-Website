@@ -74,7 +74,7 @@
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .contact-cont {
+  .contact-cont,.about-cont {
     height: 70vh;
   }
 
@@ -162,7 +162,7 @@
     font-size: 12px;
   }
 
-  .contact-cont {
+  .contact-cont,.about-cont {
     height: 60vh;
   }
 
