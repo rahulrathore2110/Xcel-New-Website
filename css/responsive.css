@@ -85,6 +85,17 @@
     font-size: 20px;
     
   }
+
+  .about-cont > div > p:nth-child(1){
+    font-size: 50px;
+  }
+  .about-cont > div > p:nth-child(2){
+    font-size: 20px;
+  }
+  .process>p:nth-child(3){
+    font-size: 15px;
+  }
+ 
 }
 
 @media screen and (max-width: 700px) {
@@ -162,4 +173,27 @@
   .contact-cont > div > p:nth-child(4) {
     font-size: 14px;
   }
+  
+  .about-cont > div > p:nth-child(1){
+    font-size: 40px;
+  }
+  .about-cont > div > p:nth-child(2){
+    font-size: 15px;
+  }
+
+  .aboutsec{
+    padding: 30px;
+  }
+  .aboutsec > p:nth-child(1){
+    font-size: 50px;
+  }
+
+  .process{
+    padding: 20px;
+  }
+  .process>p:nth-child(3){
+    font-size: 15px;
+  }
+ 
+  
 }

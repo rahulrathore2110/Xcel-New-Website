@@ -22,7 +22,7 @@ function submitdata() {
 
   if (getotpbtn.innerText != "GET OTP") {
     postdataapi(name, phone, email, msg, service);
-    window.location.href = "./thankyou.html";
+    alert("Thank you for showing intrest in xcel marketing.")
   } else {
     alert("plz verify otp first");
   }
