@@ -92,6 +92,10 @@
   .about-cont > div > p:nth-child(2){
     font-size: 20px;
   }
+  .process>p:nth-child(1){
+    font-size: 35px;
+   
+  }
   .process>p:nth-child(3){
     font-size: 15px;
   }
@@ -191,9 +195,20 @@
   .process{
     padding: 20px;
   }
+
+  .process>p:nth-child(1){
+    font-size: 25px;
+   
+  }
   .process>p:nth-child(3){
     font-size: 15px;
   }
+
+  .process_card>p:nth-child(2){
+    font-size: 20px;
+    letter-spacing: 0px;
+  }
+
  
   
 }
