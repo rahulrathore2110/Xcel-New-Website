@@ -22,7 +22,7 @@
   .nav-items {
     position: absolute;
     visibility: hidden;
-    background-color: var(--third-color);
+    background-color: var(--primry-color);
     top: 0px;
     right: 0;
     height: 70vh;
@@ -92,6 +92,8 @@
   .about-cont > div > p:nth-child(2) {
     font-size: 20px;
   }
+
+  
   .process > p:nth-child(1) {
     font-size: 35px;
   }
@@ -117,10 +119,12 @@
     font-size: 40px;
   }
 
-  .core{
+  .core {
     flex-direction: column;
     justify-content: center;
   }
+
+  
 }
 
 @media screen and (max-width: 700px) {
@@ -211,8 +215,10 @@
   }
   .aboutsec > p:nth-child(1) {
     font-size: 50px;
+    line-height: 55px;
   }
 
+ 
   .process {
     padding: 20px;
   }
@@ -221,19 +227,20 @@
     font-size: 25px;
   }
   .process > p:nth-child(3) {
-    font-size: 15px;
+    font-size: 13px;
+    font-weight: 400;
   }
 
   .process_card > p:nth-child(2) {
-    font-size: 20px;
+    font-size: 25px;
     letter-spacing: 0px;
   }
 
-  .c-intro img{
+  .c-intro img {
     max-width: 90%;
-}
+  }
 
-   .into-txt > h1 {
+  .into-txt > h1 {
     max-width: 950px;
     font-size: 30px;
   }
@@ -242,7 +249,7 @@
     font-size: 13px;
   }
 
-  .core > div{
+  .core > div {
     flex-direction: column;
     justify-content: center;
   }
