@@ -66,7 +66,7 @@
     padding: 40px;
   }
 
-   .service_cont img {
+  .service_cont img {
     width: 70%;
   }
 
@@ -74,7 +74,8 @@
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .contact-cont,.about-cont {
+  .contact-cont,
+  .about-cont {
     height: 70vh;
   }
 
@@ -83,23 +84,43 @@
   }
   .contact-cont > div > p:nth-child(2) {
     font-size: 20px;
-    
   }
 
-  .about-cont > div > p:nth-child(1){
+  .about-cont > div > p:nth-child(1) {
     font-size: 50px;
   }
-  .about-cont > div > p:nth-child(2){
+  .about-cont > div > p:nth-child(2) {
     font-size: 20px;
   }
-  .process>p:nth-child(1){
+  .process > p:nth-child(1) {
     font-size: 35px;
-   
   }
-  .process>p:nth-child(3){
+  .process > p:nth-child(3) {
     font-size: 15px;
   }
- 
+
+  .c-intro {
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: center;
+  }
+
+  .c-intro > div {
+    text-align: center;
+  }
+
+  .c-intro img {
+    max-width: 50%;
+  }
+
+  .into-txt > h1 {
+    max-width: 950px;
+    font-size: 40px;
+  }
+
+  .core{
+    flex-direction: column;
+    justify-content: center;
+  }
 }
 
 @media screen and (max-width: 700px) {
@@ -162,7 +183,8 @@
     font-size: 12px;
   }
 
-  .contact-cont,.about-cont {
+  .contact-cont,
+  .about-cont {
     height: 60vh;
   }
 
@@ -171,44 +193,57 @@
   }
   .contact-cont > div > p:nth-child(2) {
     font-size: 17px;
-    
   }
   .contact-cont > div > p:nth-child(3),
   .contact-cont > div > p:nth-child(4) {
     font-size: 14px;
   }
-  
-  .about-cont > div > p:nth-child(1){
+
+  .about-cont > div > p:nth-child(1) {
     font-size: 40px;
   }
-  .about-cont > div > p:nth-child(2){
+  .about-cont > div > p:nth-child(2) {
     font-size: 15px;
   }
 
-  .aboutsec{
+  .aboutsec {
     padding: 30px;
   }
-  .aboutsec > p:nth-child(1){
+  .aboutsec > p:nth-child(1) {
     font-size: 50px;
   }
 
-  .process{
+  .process {
     padding: 20px;
   }
 
-  .process>p:nth-child(1){
+  .process > p:nth-child(1) {
     font-size: 25px;
-   
   }
-  .process>p:nth-child(3){
+  .process > p:nth-child(3) {
     font-size: 15px;
   }
 
-  .process_card>p:nth-child(2){
+  .process_card > p:nth-child(2) {
     font-size: 20px;
     letter-spacing: 0px;
   }
 
- 
-  
+  .c-intro img{
+    max-width: 90%;
+}
+
+   .into-txt > h1 {
+    max-width: 950px;
+    font-size: 30px;
+  }
+
+  .into-txt p {
+    font-size: 13px;
+  }
+
+  .core > div{
+    flex-direction: column;
+    justify-content: center;
+  }
 }

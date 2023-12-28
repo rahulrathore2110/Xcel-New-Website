@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact</title>
     <link rel="stylesheet" href="./css/style.css" />
-    <link rel="stylesheet" href="./css/contact.css" />
+    <link rel="stylesheet" href="./css/career.css" />
     <link rel="stylesheet" href="./css/responsive.css" />
     <script
       src="https://kit.fontawesome.com/6909acc9e8.js"
@@ -36,20 +36,47 @@
         </div>
       </div>
     </header>
-    <div class="contact-cont">
-      <div>
-        <p>Where To Find Us?</p>
-        <p>
-          BGF - 22, Ground Floor, Logixtechnova, Sector 132, Noida 201301, India
-        </p>
-        <p>support@fabmediatech.com</p>
-        <p>+91 95682-22255</p>
-      </div>
+    <div class="c-intro">
+        <div><img src="./image/career.png" alt="Carrer"></div>
+        <div class="into-txt">
+            <h1>Launch your Carrer With Fabmediatech</h1>
+            <p>At Fabmediatech, our greatest asset is our people. We’re passionate about building an inclusive culture and workplace where everyone feels welcomed, valued, heard, and treated with dignity and respect. Across our network, our people bring a remarkable diversity of backgrounds and talents dedicated to building the most inspiring agency in the world.</p>
+            <p>We aim to deliver equitable outcomes and growth for our clients and teams through our four core behaviors of Creative Bravery, Listening, Positivity, and In It Together.</p>
+
+            <button class="apply">Apply Now</button>
+        </div>
     </div>
 
-    <div class="contact-form">
+    <div class="headline">
+      <p>We're looking for amazing recent graduate to join Fabmediatech in 2024</p>
+    </div>
+
+    <div class="core">
+       <div>
+         <div class="core_card">
+            <img src="./image/v1.gif" alt="Core_Values">
+            <p>We challenge convention in every aspect of our work. Creative describes how we act, not the department we sit in.</p>
+        </div>
+        <div class="core_card">
+            <img src="./image/v4.gif" alt="Core_Values">
+            <p>We seek solutions where we see problems and find a way forward. We bring passion and positivity to situations we encounter.</p>
+        </div>
+       </div>
+       <div>
+         <div class="core_card">
+            <img src="./image/v2.gif" alt="Core_Values">
+            <p>We're at our best when we work together, with our clients, with our colleagues and with our partners. We all win when the team delivers.</p>
+        </div>
+        <div class="core_card">
+            <img src="./image/v3.gif" alt="Core_Values">
+            <p>We seek solutions where we see problems and find a way forward. We bring passion and positivity to situations we encounter.</p>
+        </div>
+       </div>
+    </div>
+
+   <div class="contact-form">
       <form >
-        <h1>Get in Touch with us!</h1>
+        <h1>Inspiring Opportunities!</h1>
 
         <input type="text" id="name" placeholder="Enter Your Name*" required />
         <input type="text" id="email" placeholder="Enter Your Email" />
@@ -61,24 +88,37 @@
           required
         />
         <select
-          name="service-drop"
-          id="service-drop"
+          name="edu-drop"
+          id="edu-drop"
           aria-placeholder="dcs"
           required
         >
-          <option>Select Service*</option>
-          <option value="1">Bulk SMS</option>
-          <option value="2">OBD(Voice Calls)</option>
-          <option value="3">Cloud Telephone</option>
-          <option value="4">WhatsApp Business</option>
-          <option value="5">Bulk Email</option>
-          <option value="6">Missed call service</option>
-          <option value="7">Toll Free Number</option>
-          <option value="8">Internet Lease Line(ILL)</option>
-          <option value="9">PRI</option>
-          <option value="10">Cloud Server</option>
-          <option value="11">Microsoft 365</option>
-          <option value="12">Google WorkSpace</option>
+          <option>Select Higher Qualification*</option>
+          <option value="1">Phd.</option>
+          <option value="2">MBA</option>
+          <option value="3">M Com.</option>
+          <option value="3">MCA</option>
+          <option value="4">PGDM</option>
+          <option value="5">BCA</option>
+          <option value="5">BBA</option>
+          <option value="6">B Com.</option>
+          <option value="7">BA</option>
+          <option value="8">Bachlor's</option>
+          <option value="8">Diploma</option>
+          <option value="9">Other's</option>
+        </select>
+
+        <select
+          name="job-drop"
+          id="job-drop"
+          aria-placeholder="dcs"
+          required
+        >
+          <option>Select Position You Apply For*</option>
+          <option value="1">Sales Executive</option>
+          <option value="2">Business Development Executive</option>
+          <option value="3">Sales Manager</option>
+          <option value="3">Technical Support Executive</option>
         </select>
 
         <textarea
@@ -92,11 +132,12 @@
         <div>
           <div class="submit-btn">
             <input type="submit" id="submit" />
-            <button id="verify">GET OTP</button>
           </div>
         </div>
       </form>
     </div>
+
+    
 
     <footer id="footer">
       <div>
@@ -140,15 +181,11 @@
       <div>Copyright 2023 @Fabmediatech Pvt Ltd | All Right Reseved</div>
     </div>
 
-    <div class="otp-popup">
-      <input type="number" name="otp" id="optnum" />
-      <button id="otp-verfiy">verify</button>
-    </div>
+    
   </body>
 </html>
 
 <script src="./script/nav.js"></script>
-<script src="./script/submit.js"></script>
 <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
 <script>
   $(window).scroll(function () {
